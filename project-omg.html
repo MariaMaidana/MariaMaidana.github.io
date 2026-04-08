@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Oh My Grill! — Maria Eduarda</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/portfolioicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
@@ -21,7 +22,7 @@
   <!-- HERO -->
   <section class="project-page-hero">
     <div>
-      <span class="hero-tag">SwiftUI • SpriteKit • CloudKit • Multipeer Connectivity</span>
+      <span class="hero-tag">SwiftUI • SpriteKit • GameplayKit • Multipeer Connectivity • CoreMotion</span>
 
       <h1 class="project-page-title">
         Oh My <br><em>Grill!</em>
@@ -45,13 +46,19 @@
       What is Oh My Grill?
     </h2>
 
-    <p class="hero-desc">
-      Oh My Grill! is an interactive cooking game where players take on the role of chefs working together to fulfill orders as quickly as possible. Each player is responsible for different tasks, such as grilling, assembling, or delivering dishes, creating a fast-paced and collaborative experience.
-    </p>
-    
-    <p class="hero-desc" style="margin-top: 1rem;">
-      The project focuses on real-time multiplayer interaction using Multipeer Connectivity, allowing nearby players to seamlessly connect and play together. Built with SpriteKit, the game emphasizes responsive controls, smooth animations, and a playful visual style, while CloudKit is used to support data persistence and player progression.
-    </p>
+    <a class="project-store-link" href="https://apps.apple.com/br/app/oh-my-grill/id6756377473" target="_blank">
+      ↗ App Store
+    </a>
+  
+    <div class="project-about-grid">
+      <p class="hero-desc">
+        Oh My Grill! is an interactive cooking game where players take on the role of chefs working together to fulfill orders as quickly as possible. Each player is responsible for different tasks, such as grilling, assembling, or delivering dishes, creating a fast-paced and collaborative experience.
+      </p>
+      
+      <p class="hero-desc">
+        The project focuses on real-time multiplayer interaction using Multipeer Connectivity, allowing nearby players to seamlessly connect and play together. Built with SpriteKit, the game emphasizes responsive controls, smooth animations, and a playful visual style, while CloudKit is used to support data persistence and player progression.
+      </p>
+    </div>
   </section>
 
   <!-- GALLERY -->
@@ -59,7 +66,7 @@
     <span class="section-label">Gallery</span>
 
     <h2 class="project-page-title" style="font-size:2rem;">
-      Screenshots & media
+      Screenshots
     </h2>
 
     <div class="project-page-gallery">
@@ -68,10 +75,10 @@
         <source src="/images/cerne/cerne-demo.mp4" type="video/mp4">
       </video> -->
 
-      <img src="/images/omg/omg-screen.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/omg/omg-screen2.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/omg/omg-screen3.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/omg/omg-screen4.png" class="phone-shot" alt="Gameplay screen">
+      <img src="/images/omg/omg-screen.png" class="phone-shot" alt="Gameplay screen", style="height: 260px;">
+      <img src="/images/omg/omg-screen2.png" class="phone-shot" alt="Gameplay screen", style="height: 260px;">
+      <img src="/images/omg/omg-screen3.png" class="phone-shot" alt="Gameplay screen", style="height: 260px;">
+      <img src="/images/omg/omg-screen4.png" class="phone-shot" alt="Gameplay screen", style="height: 260px;">
 
     </div>
   </section>
@@ -86,27 +93,42 @@
 
     <p class="hero-desc">
       This project was developed as part of a collaborative effort,
-      combining design, development, and sound.
+      combining design and development.
     </p>
 
-    <div style="margin-top:1.5rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-      
-      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.25rem;">
-        <strong>Maria Eduarda</strong>
-        <p class="hero-desc" style="font-size:0.9rem;">iOS Developer</p>
-      </div>
+    <div style="margin-top:1.5rem; display:flex; gap:0.75rem; overflow-x:auto; padding-bottom:0.5rem; scrollbar-width:none;">
 
-      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.25rem;">
-        <strong>Teammate</strong>
-        <p class="hero-desc" style="font-size:0.9rem;">Game Designer</p>
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Maria Eduarda Santellano</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
       </div>
-
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Vítor Martins</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">Designer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">João Carvalho</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Bárbara Dapper</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Jean Pierre</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    © 2026 Maria Eduarda —
+    © 2026 Maria Eduarda Santellano —
     <a href="index.html" style="color:var(--accent); text-decoration:none;">
       back to portfolio
     </a>

@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sardine Escape — Maria Eduarda</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/portfolioicon.png">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
@@ -21,7 +23,7 @@
   <!-- HERO -->
   <section class="project-page-hero">
     <div>
-      <span class="hero-tag">Swift • SwiftUI • SpriteKit • GameKit</span>
+      <span class="hero-tag">Swift • SwiftUI • SpriteKit • GameKit • CoreMotion</span>
 
       <h1 class="project-page-title">
         Sardine <br><em>Escape.</em>
@@ -45,13 +47,15 @@
       What is Sardine Escape?
     </h2>
 
-    <p class="hero-desc">
-      Sardine Escape is an arcade-style mobile game where players swim through an endless ocean, avoiding obstacles and surviving for as long as possible. Using tilt or touch controls, the goal is simple: go as far as you can and beat your best distance.
-    </p>
-    
-    <p class="hero-desc" style="margin-top: 1rem;">
-      As players progress, they can collect coins to unlock a variety of fish skins with different rarities. Through a vending machine system, each “tin” reveals a new surprise, adding a layer of progression and excitement. The game also integrates Game Center for global leaderboards and iCloud sync, ensuring a connected and competitive experience.
-    </p>
+    <div class="project-about-grid">
+      <p class="hero-desc">
+        Sardine Escape is an arcade-style mobile game where players swim through an endless ocean, avoiding obstacles and surviving for as long as possible. Using tilt or touch controls, the goal is simple: go as far as you can and beat your best distance.
+      </p>
+      
+      <p class="hero-desc">
+        As players progress, they can collect coins to unlock a variety of fish skins with different rarities. Through a vending machine system, each “tin” reveals a new surprise, adding a layer of progression and excitement. The game also integrates Game Center for global leaderboards and iCloud sync, ensuring a connected and competitive experience.
+      </p>
+    </div>
   </section>
 
   <!-- GALLERY -->
@@ -59,7 +63,7 @@
     <span class="section-label">Gallery</span>
 
     <h2 class="project-page-title" style="font-size:2rem;">
-      Screenshots & media
+      Screenshots
     </h2>
 
     <div class="project-page-gallery">
@@ -88,24 +92,39 @@
       combining design, development, and sound.
     </p>
 
-    <div style="margin-top:1.5rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-      
-      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.25rem;">
-        <strong>Maria Eduarda</strong>
-        <p class="hero-desc" style="font-size:0.9rem;">iOS Developer</p>
-      </div>
+    <div style="margin-top:1.5rem; display:flex; gap:0.75rem; overflow-x:auto; padding-bottom:0.5rem; scrollbar-width:none;">
 
-      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.25rem;">
-        <strong>Teammate</strong>
-        <p class="hero-desc" style="font-size:0.9rem;">Game Designer</p>
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Maria Eduarda Santellano</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
       </div>
-
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Martina Nogueira</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">Designer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Gabriel Barbosa</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Gustavo Melleu</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
+        <strong style="font-size:0.88rem;">Enzo Tonatto</strong>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+      </div>
+    
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    © 2026 Maria Eduarda —
+    © 2026 Maria Eduarda Santellano —
     <a href="index.html" style="color:var(--accent); text-decoration:none;">
       back to portfolio
     </a>

@@ -266,6 +266,33 @@ nav {
   margin: 0 auto;
 }
 
+.project-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.project-store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1.1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-store-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .project-page-gallery {
   margin-top: 1.5rem;
   display: flex;
@@ -359,4 +386,17 @@ footer {
   .project-page-hero {
     grid-template-columns: 1fr;
   }
+
+  .project-about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero,
+.projects-header,
+.projects-grid,
+.project-page-hero,
+.project-page-section,
+.contact-section {
+  max-width: 1400px;
 }
