@@ -391,12 +391,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
-.hero,
-.projects-header,
-.projects-grid,
-.project-page-hero,
-.project-page-section,
-.contact-section {
-  max-width: 1400px;
-}
