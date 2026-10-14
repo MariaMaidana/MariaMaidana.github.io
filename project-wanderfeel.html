@@ -8,7 +8,7 @@
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,7 +17,10 @@
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="index.html">ME.</a>
-    <a class="nav-back" href="index.html">← Back to portfolio</a>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <a class="nav-back" href="index.html" data-i18n="nav-back">← Back to portfolio</a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="Mudar para Português">PT</button>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -29,79 +32,64 @@
         <em>WanderFeel.</em>
       </h1>
 
-      <p class="project-page-subtitle">
-        WanderFeel is a travel journal app that helps users document their journeys while tracking their emotions, combining memories, photos, and personal reflections into a meaningful experience.
-      </p>
+      <p class="project-page-subtitle" data-i18n="wanderfeel-subtitle">WanderFeel is a travel journal app that helps users document their journeys while tracking their emotions, combining memories, photos, and personal reflections into a meaningful experience.</p>
     </div>
 
     <div class="project-page-visual">
-      <img src="/images/wanderfeel/wanderfeel-logo.png" alt="WanderFeel" class="project-page-logo">
+      <img src="images/wanderfeel/wanderfeel-logo.png" alt="WanderFeel" class="project-page-logo">
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="project-page-section">
-    <span class="section-label">About the project</span>
+    <span class="section-label" data-i18n="section-about">About the project</span>
 
-    <h2 class="project-page-title" style="font-size:2rem;">
-      What is Wanderfeel?
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem;" data-i18n="wanderfeel-about-title">What is WanderFeel?</h2>
 
     <a class="project-store-link" href="https://github.com/MariaMaidana/WanderFeel" target="_blank">
         ↗ GitHub
     </a>
 
     <div class="project-about-grid">
-        <p class="hero-desc">
-            Unlike traditional travel apps that focus only on locations, WanderFeel centers on how each moment feels. Users can log emotions throughout their journey, turning simple trips into rich, personal stories that evolve over time.
-        </p>
+        <p class="hero-desc" data-i18n="wanderfeel-desc1">Unlike traditional travel apps that focus only on locations, WanderFeel centers on how each moment feels. Users can log emotions throughout their journey, turning simple trips into rich, personal stories that evolve over time.</p>
             
-        <p class="hero-desc">
-            The core of the app is the emotional journey: users can log how they feel throughout their travels, building a deeper connection to their experiences over time. Designed and developed entirely by me using SwiftUI, the app focuses on simplicity, clarity, and a calm visual identity that enhances storytelling.
-        </p>
+        <p class="hero-desc" data-i18n="wanderfeel-desc2">The core of the app is the emotional journey: users can log how they feel throughout their travels, building a deeper connection to their experiences over time. Designed and developed entirely by me using SwiftUI, the app focuses on simplicity, clarity, and a calm visual identity that enhances storytelling.</p>
     </div>
   </section>
 
   <!-- GALLERY -->
   <section class="project-page-section">
-    <span class="section-label">Gallery</span>
+    <span class="section-label" data-i18n="section-gallery">Gallery</span>
 
-    <h2 class="project-page-title" style="font-size:2rem;">
-      Screenshots
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem;" data-i18n="section-gallery-title">Screenshots</h2>
 
     <div class="project-page-gallery">
 
       <!-- <video class="phone-shot video" autoplay muted loop playsinline>
-        <source src="/images/sardine/sardine-demo.mp4" type="video/mp4">
+        <source src="images/sardine/sardine-demo.mp4" type="video/mp4">
       </video> -->
 
-      <img src="/images/wanderfeel/wanderfeel-screen.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/wanderfeel/wanderfeel-screen2.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/wanderfeel/wanderfeel-screen3.png" class="phone-shot" alt="Gameplay screen">
-      <img src="/images/wanderfeel/wanderfeel-screen4.png" class="phone-shot" alt="Gameplay screen">
+      <img src="images/wanderfeel/wanderfeel-screen.png" class="phone-shot" alt="Gameplay screen">
+      <img src="images/wanderfeel/wanderfeel-screen2.png" class="phone-shot" alt="Gameplay screen">
+      <img src="images/wanderfeel/wanderfeel-screen3.png" class="phone-shot" alt="Gameplay screen">
+      <img src="images/wanderfeel/wanderfeel-screen4.png" class="phone-shot" alt="Gameplay screen">
 
     </div>
   </section>
 
   <!-- TEAM -->
   <section class="project-page-section">
-    <span class="section-label">Team</span>
+    <span class="section-label" data-i18n="section-team">Team</span>
 
-    <h2 class="project-page-title" style="font-size:2rem;">
-      The people behind it
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem;" data-i18n="section-team-title">The people behind it</h2>
 
-    <p class="hero-desc">
-      This project was developed as part of a collaborative effort,
-      combining design and development.
-    </p>
+    <p class="hero-desc" data-i18n="wanderfeel-team-desc">This project was developed as part of a collaborative effort, combining design and development.</p>
 
     <div style="margin-top:1.5rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
       
       <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.25rem;">
         <strong>Maria Eduarda</strong>
-        <p class="hero-desc" style="font-size:0.9rem;">Designer and iOS Developer</p>
+        <p class="hero-desc" style="font-size:0.9rem;" data-i18n="wanderfeel-role">Designer and iOS Developer</p>
       </div>
 
     </div>
@@ -110,10 +98,10 @@
   <!-- FOOTER -->
   <footer>
     © 2026 Maria Eduarda Santellano —
-    <a href="index.html" style="color:var(--accent); text-decoration:none;">
-      back to portfolio
-    </a>
+    <a href="index.html" style="color:var(--accent); text-decoration:none;" data-i18n="footer-back">back to portfolio</a>
   </footer>
+
+  <script src="lang.js"></script>
 
 </body>
 </html>
