@@ -72,6 +72,15 @@ const translations = {
     "tower-about-title": "How it works",
     "tower-desc1": "Enemies follow a path toward the village. You stop them by aiming and throwing darts with hand gestures. Each wave brings a new challenge.",
     "tower-desc2": "Defeated enemies earn you money for upgrades between waves. The game uses hand tracking for input and RealityKit for the immersive world.",
+    "flyready-subtitle": "Practice cabin crew interviews out loud, with questions that respond to what you say.",
+    "flyready-about-title": "Interview practice that talks back",
+    "flyready-desc1": "FlyReady runs a spoken interview on your iPhone. A recruiter asks a question, listens to your answer, and follows up based on your response.",
+    "flyready-desc2": "Sessions cover motivation, customer conflict, teamwork, safety, adaptability, and behavioral questions. After each answer, you get feedback you can use for the next round. Speech and feedback run on the device.",
+    "entrelinhas-name": "Otterlines",
+    "entrelinhas-subtitle": "An interactive reading experience for families, made for Apple TV.",
+    "entrelinhas-about-title": "Reading together on the big screen",
+    "entrelinhas-desc1": "Otterlines brings stories and activities to the TV, with the otters Sagu and Pudim guiding children through each adventure.",
+    "entrelinhas-desc2": "The experience invites families to read together and explore questions and creative activities along the way. It was built as a team project for Apple TV.",
   },
 
   pt: {
@@ -147,6 +156,15 @@ const translations = {
     "tower-about-title": "Como funciona",
     "tower-desc1": "Os inimigos seguem um caminho até a vila. Para detê-los, você mira e lança dardos com gestos das mãos. Cada onda traz um novo desafio.",
     "tower-desc2": "Os inimigos derrotados rendem dinheiro para melhorias entre as ondas. O jogo usa rastreamento das mãos nos controles e RealityKit no cenário imersivo.",
+    "flyready-subtitle": "Treine entrevistas para comissário de bordo em voz alta, com perguntas que acompanham suas respostas.",
+    "flyready-about-title": "Uma entrevista para praticar de verdade",
+    "flyready-desc1": "No FlyReady, você conversa com um recrutador pelo iPhone. Ele faz uma pergunta, ouve sua resposta e continua a entrevista a partir do que você disse.",
+    "flyready-desc2": "Os treinos passam por motivação, conflitos com clientes, trabalho em equipe, segurança, adaptação e perguntas comportamentais. Depois de cada resposta, você recebe orientações para melhorar. Tudo funciona no próprio aparelho.",
+    "entrelinhas-name": "Entrelinhas",
+    "entrelinhas-subtitle": "Uma experiência de leitura para a família, criada para Apple TV.",
+    "entrelinhas-about-title": "Histórias para ler junto",
+    "entrelinhas-desc1": "O Entrelinhas leva livros e atividades para a TV. As lontras Sagu e Pudim acompanham as crianças pelas histórias.",
+    "entrelinhas-desc2": "A proposta é reunir a família para ler, conversar sobre o que aconteceu e explorar atividades criativas. O app foi desenvolvido em equipe para Apple TV.",
   }
 };
 

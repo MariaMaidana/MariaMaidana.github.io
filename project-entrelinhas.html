@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otterlines / Entrelinhas — Maria Eduarda Santellano</title>
+  <meta name="description" content="Otterlines is an interactive family reading experience for Apple TV." />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/portfolioicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">ME.</a>
+    <div class="project-nav-actions">
+      <a class="nav-back" href="index.html" data-i18n="nav-back">← Back to portfolio</a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="Mudar para Português">PT</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-page-hero">
+      <div>
+        <span class="hero-tag">tvOS • SwiftUI</span>
+        <h1 class="project-page-title" data-i18n="entrelinhas-name">Otterlines</h1>
+        <p class="project-page-subtitle" data-i18n="entrelinhas-subtitle">An interactive reading experience for families, made for Apple TV.</p>
+      </div>
+      <div class="project-page-visual">
+        <img src="images/entrelinhas/icon.webp" alt="Otterlines app icon with an otter reading a book" class="project-page-logo">
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <span class="section-label" data-i18n="section-about">About the project</span>
+      <h2 class="project-page-title" data-i18n="entrelinhas-about-title">Reading together on the big screen</h2>
+      <a class="project-store-link" href="https://apps.apple.com/br/app/entrelinhas-livros-divers%C3%A3o/id6818618622" target="_blank" rel="noopener noreferrer" data-i18n="store-link-appstore">↗ App Store</a>
+      <div class="project-about-grid">
+        <p class="hero-desc" data-i18n="entrelinhas-desc1">Otterlines brings stories and activities to the TV, with the otters Sagu and Pudim guiding children through each adventure.</p>
+        <p class="hero-desc" data-i18n="entrelinhas-desc2">The experience invites families to read together and explore questions and creative activities along the way. It was built as a team project for Apple TV.</p>
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <span class="section-label" data-i18n="section-gallery">Gallery</span>
+      <h2 class="project-page-title" data-i18n="section-gallery-title">Screenshots</h2>
+      <div class="project-page-gallery">
+        <img src="images/entrelinhas/screen-1.webp" class="tv-shot" alt="Illustrated story map in Otterlines" loading="lazy">
+        <img src="images/entrelinhas/screen-2.webp" class="tv-shot" alt="Book selection in Otterlines" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Maria Eduarda Santellano — <a href="index.html" data-i18n="footer-back">back to portfolio</a></footer>
+  <script src="lang.js"></script>
+</body>
+</html>

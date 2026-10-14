@@ -458,6 +458,7 @@ nav {
 .project-store-link { padding: 0 0 .2rem; border: 0; border-bottom: 1px solid var(--accent); border-radius: 0; font-weight: 500; }
 .project-store-link:hover { color: var(--text); border-color: var(--text); background: none; }
 .phone-shot, .phone-shot.video { border-radius: 18px; box-shadow: none; }
+.tv-shot { width: min(72vw, 520px); height: auto; object-fit: contain; border-radius: 10px; flex-shrink: 0; }
 
 .contact-section { padding-top: 3rem; border-color: var(--text); }
 .project-nav-actions { display: flex; align-items: center; gap: 1.5rem; }
