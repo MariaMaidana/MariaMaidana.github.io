@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wakes — Maria Eduarda Santellano</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/portfolioicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">ME.</a>
+    <div class="project-nav-actions">
+      <a class="nav-back" href="index.html" data-i18n="nav-back">← Back to portfolio</a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="Mudar para Português">PT</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-page-hero">
+      <div>
+        <span class="hero-tag">visionOS • SwiftUI • RealityKit</span>
+        <h1 class="project-page-title">Wakes</h1>
+        <p class="project-page-subtitle" data-i18n="tower-subtitle">Wakes is a tower defense game for Apple Vision Pro where you protect the base by throwing darts with your hands.</p>
+      </div>
+      <div class="project-page-visual">
+        <img src="images/towerdefense/icon.png" alt="Wakes game icon" class="project-page-logo">
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <span class="section-label" data-i18n="section-about">About the project</span>
+      <h2 class="project-page-title" data-i18n="tower-about-title">How it works</h2>
+      <div class="project-about-grid">
+        <p class="hero-desc" data-i18n="tower-desc1">Enemies follow a path toward the village. You stop them by aiming and throwing darts with hand gestures. Each wave brings a new challenge.</p>
+        <p class="hero-desc" data-i18n="tower-desc2">Defeated enemies earn you money for upgrades between waves. The game uses hand tracking for input and RealityKit for the immersive world.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Maria Eduarda Santellano — <a href="index.html" data-i18n="footer-back">back to portfolio</a></footer>
+  <script src="lang.js"></script>
+</body>
+</html>

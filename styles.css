@@ -391,3 +391,104 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Refined portfolio layout */
+:root {
+  --bg: #f8f8f6;
+  --text: #20282a;
+  --text-muted: #5f696b;
+  --accent: #315d68;
+  --border: #d9dedc;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+
+body { line-height: 1.55; }
+section[id] { scroll-margin-top: 6rem; }
+nav {
+  position: sticky;
+  min-height: 76px;
+  padding: 0 max(2rem, calc((100vw - 1120px) / 2));
+  border-bottom: 1px solid var(--border);
+  background: rgba(248, 248, 246, .96);
+  backdrop-filter: blur(12px);
+}
+.nav-logo { font-family: var(--sans); font-size: 1.1rem; font-weight: 700; letter-spacing: -.05em; }
+.nav-links { align-items: center; margin: 0; padding: 0; }
+.nav-links a, .nav-back, .lang-toggle { color: var(--text); font-size: .78rem; font-weight: 700; letter-spacing: .07em; }
+.lang-toggle { padding: .45rem 0; border: 0; background: none; cursor: pointer; }
+.lang-toggle:hover { color: var(--accent); }
+
+.hero { padding-top: 7rem; padding-bottom: 7rem; }
+.hero-content { grid-template-columns: minmax(0, 1.45fr) minmax(260px, .75fr); gap: clamp(3rem, 7vw, 7rem); }
+.hero-tag, .projects-label, .section-label { color: var(--accent); font-size: .74rem; font-weight: 700; letter-spacing: .13em; }
+.hero-tag { margin-bottom: 1.6rem; padding: 0; background: none; border-radius: 0; }
+.hero-name { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.7rem, 5vw, 4.5rem); font-weight: 400; line-height: 1.13; letter-spacing: -.025em; }
+.hero-text { min-width: 0; }
+.hero-role { margin: 1.5rem 0 1.25rem; color: var(--accent); font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: 500; letter-spacing: -.035em; }
+.hero-desc { max-width: 590px; margin-bottom: 2rem; font-size: 1.05rem; font-weight: 400; line-height: 1.7; }
+.hero-links { flex-wrap: wrap; gap: 1.7rem; }
+.hero-link { color: var(--text); border-color: var(--text); font-weight: 500; }
+.hero-photo-container { width: 100%; max-width: 300px; height: auto; aspect-ratio: 524 / 427; justify-self: end; padding: 0; border-radius: 0; background: none; box-shadow: none; }
+.hero-photo { object-fit: contain; }
+
+.projects-header { padding-bottom: 1.25rem; }
+.projects-label { padding-bottom: 1rem; border-color: var(--text); }
+.projects-grid { gap: 0 2.5rem; padding-bottom: 7rem; }
+.project-card { min-width: 0; gap: 1.15rem; padding: 1.5rem 0; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: none; box-shadow: none; transition: color .2s ease; }
+.project-card:hover { transform: none; color: var(--accent); box-shadow: none; }
+.project-number { align-self: flex-start; width: 1.5rem; padding-top: .2rem; color: var(--text-muted); font-size: .73rem; }
+.project-icon-box { width: 72px; height: 72px; flex: 0 0 72px; border: 1px solid var(--border); border-radius: 12px; background: #fff; }
+.project-icon-img { object-fit: contain; }
+.project-details { min-width: 0; }
+.project-title { margin-bottom: .25rem; font-size: 1.24rem; letter-spacing: -.035em; }
+.project-subtitle { font-size: .78rem; font-weight: 400; line-height: 1.45; }
+.project-arrow { align-self: flex-start; margin-left: auto; font-size: 1.2rem; transition: transform .2s ease; }
+.project-card:hover .project-arrow { transform: translate(3px, -3px); }
+
+.project-page-hero { padding-top: 5rem; padding-bottom: 5rem; }
+.project-page-hero .hero-tag { margin-bottom: 1rem; letter-spacing: .06em; text-transform: none; }
+.project-page-title { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.5rem, 4.3vw, 3.6rem); font-weight: 400; line-height: 1.15; letter-spacing: -.025em; }
+.project-page-title em { font-style: normal; }
+.project-page-subtitle { font-size: 1.04rem; font-weight: 400; line-height: 1.7; }
+.project-page-visual { height: auto; min-height: 0; padding: 0; border-radius: 0; background: none; }
+.project-page-logo { width: min(72%, 280px); max-width: none; max-height: none; height: auto; box-shadow: none; }
+.project-page-section { padding-top: 2.5rem; padding-bottom: 2.5rem; border-top: 1px solid var(--border); }
+.project-page-section .section-label { margin-bottom: 1rem; }
+.project-about-grid .hero-desc { margin-bottom: 0; }
+.project-store-link { padding: 0 0 .2rem; border: 0; border-bottom: 1px solid var(--accent); border-radius: 0; font-weight: 500; }
+.project-store-link:hover { color: var(--text); border-color: var(--text); background: none; }
+.phone-shot, .phone-shot.video { border-radius: 18px; box-shadow: none; }
+
+.contact-section { padding-top: 3rem; border-color: var(--text); }
+.project-nav-actions { display: flex; align-items: center; gap: 1.5rem; }
+.contact-section .section-label { margin-bottom: 1.5rem; }
+.contact-link { padding: 1.1rem 0; font-size: clamp(1.1rem, 2vw, 1.4rem); }
+footer { padding: 2rem; border-top: 1px solid var(--border); font-size: .8rem; }
+
+@media (max-width: 900px) {
+  nav { min-height: 68px; padding: 0 1.5rem; }
+  .hero, .projects-header, .projects-grid, .contact-section, .project-page-hero, .project-page-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .hero { padding-top: 4rem; padding-bottom: 4rem; }
+  .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: left; }
+  .hero-photo-container { grid-row: 1; justify-self: start; width: min(52vw, 260px); height: auto; }
+  .projects-grid { grid-template-columns: 1fr; gap: 0; padding-bottom: 4rem; }
+  .project-page-hero { padding-top: 3rem; padding-bottom: 3rem; }
+  .project-page-visual { min-height: 0; }
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .hero-content { grid-template-columns: minmax(0, 1fr) 260px; gap: 2.5rem; }
+  .hero-name { font-size: clamp(2.7rem, 5.2vw, 4.2rem); }
+}
+
+@media (max-width: 480px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a, .nav-back, .lang-toggle { font-size: .7rem; }
+  .hero-name { font-size: clamp(2.65rem, 12vw, 3.8rem); }
+  .project-card { gap: .75rem; }
+  .project-number { display: none; }
+  .project-icon-box { flex-basis: 62px; width: 62px; height: 62px; }
+  .project-title { font-size: 1.1rem; }
+  .project-subtitle { font-size: .72rem; }
+  .phone-shot, .phone-shot.video { height: 340px; }
+}

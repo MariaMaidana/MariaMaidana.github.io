@@ -1,8 +1,8 @@
-# Maria Eduarda Santellano — iOS Developer
+# Maria Eduarda Santellano — Software Developer
 
 [![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge)](https://mariamaidana.github.io/)
 
-I am a Computer Science student and a developer at the **Apple Developer Academy** in Porto Alegre, Brazil. I am passionate about building elegant, user-centric iOS applications using Swift and SwiftUI.
+I build iOS apps with Swift and SwiftUI. I am a Computer Science student and part of the **Apple Developer Academy** in Porto Alegre, Brazil.
 
 ## 📬 Connect with Me
 

@@ -8,7 +8,7 @@
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,7 +17,10 @@
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="index.html">ME.</a>
-    <a class="nav-back" href="index.html">← Back to portfolio</a>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <a class="nav-back" href="index.html" data-i18n="nav-back">← Back to portfolio</a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="Mudar para Português">PT</button>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -29,76 +32,61 @@
         <em>Rotta.</em>
       </h1>
 
-      <p class="project-page-subtitle">
-        Rotta is an iOS app designed to make Formula racing more accessible, providing information about categories like Formula 2, Formula 3, and F1 Academy, along with race calendars, standings, and detailed insights into drivers, teams, and car components.
-      </p>
+      <p class="project-page-subtitle" data-i18n="rotta-subtitle">Rotta is an iOS app designed to make Formula racing more accessible, providing information about categories like Formula 2, Formula 3, and F1 Academy, along with race calendars, standings, and detailed insights into drivers, teams, and car components.</p>
     </div>
 
     <div class="project-page-visual">
-      <img src="/images/rotta/rotta-logo.png" alt="Rotta" class="project-page-logo">
+      <img src="images/rotta/rotta-logo.png" alt="Rotta" class="project-page-logo">
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="project-page-section">
-    <span class="section-label">About the project</span>
+    <span class="section-label" data-i18n="section-about">About the project</span>
   
-    <h2 class="project-page-title" style="font-size:2rem">
-      What is Rotta?
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem" data-i18n="rotta-about-title">What is Rotta?</h2>
   
     <div class="project-about-grid">
-      <p class="hero-desc">
-        Rotta was created to simplify how fans follow the development categories of Formula racing, which are often harder to track than Formula 1. By centralizing key information in one place, the app makes it easier to stay updated on races, drivers, and team performance without needing multiple sources.
-      </p>
-      <p class="hero-desc">
-        In addition to competition data, Rotta provides educational content about the sport, including explanations of car components, team structures, and driver profiles. Built with UIKit, the app emphasizes structured navigation, data organization, and performance, using Core Data and CloudKit to manage and sync information efficiently.
-      </p>
+      <p class="hero-desc" data-i18n="rotta-desc1">Rotta was created to simplify how fans follow the development categories of Formula racing, which are often harder to track than Formula 1. By centralizing key information in one place, the app makes it easier to stay updated on races, drivers, and team performance without needing multiple sources.</p>
+      <p class="hero-desc" data-i18n="rotta-desc2">In addition to competition data, Rotta provides educational content about the sport, including explanations of car components, team structures, and driver profiles. Built with UIKit, the app emphasizes structured navigation, data organization, and performance, using Core Data and CloudKit to manage and sync information efficiently.</p>
     </div>
   </section>
 
   <!-- GALLERY -->
   <section class="project-page-section">
-    <span class="section-label">Gallery</span>
+    <span class="section-label" data-i18n="section-gallery">Gallery</span>
 
-    <h2 class="project-page-title" style="font-size:2rem;">
-      Screenshots
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem;" data-i18n="section-gallery-title">Screenshots</h2>
 
     <div class="project-page-gallery">
 
       <!-- <video class="phone-shot video" autoplay muted loop playsinline>
-        <source src="/images/rotta/rotta-demo.mp4" type="video/mp4">
+        <source src="images/rotta/rotta-demo.mp4" type="video/mp4">
       </video> -->
 
-      <!-- <img src="/images/rotta/rotta-screen.png" class="phone-shot" alt="Gameplay screen"> -->
-      <img src="/images/rotta/rotta-screen2.png" class="phone-shot" alt="Store screen">
-      <img src="/images/rotta/rotta-screen3.png" class="phone-shot" alt="Store screen">
-      <img src="/images/rotta/rotta-screen4.png" class="phone-shot" alt="Store screen">
-      <img src="/images/rotta/rotta-screen6.png" class="phone-shot" alt="Store screen">
-      <img src="/images/rotta/rotta-screen5.png" class="phone-shot" alt="Store screen">
+      <!-- <img src="images/rotta/rotta-screen.png" class="phone-shot" alt="Gameplay screen"> -->
+      <img src="images/rotta/rotta-screen2.png" class="phone-shot" alt="Store screen">
+      <img src="images/rotta/rotta-screen3.png" class="phone-shot" alt="Store screen">
+      <img src="images/rotta/rotta-screen4.png" class="phone-shot" alt="Store screen">
+      <img src="images/rotta/rotta-screen6.png" class="phone-shot" alt="Store screen">
+      <img src="images/rotta/rotta-screen5.png" class="phone-shot" alt="Store screen">
 
     </div>
   </section>
 
   <!-- TEAM -->
   <section class="project-page-section">
-    <span class="section-label">Team</span>
+    <span class="section-label" data-i18n="section-team">Team</span>
 
-    <h2 class="project-page-title" style="font-size:2rem;">
-      The people behind it
-    </h2>
+    <h2 class="project-page-title" style="font-size:2rem;" data-i18n="section-team-title">The people behind it</h2>
 
-    <p class="hero-desc">
-      This project was developed as part of a collaborative effort,
-      combining design and development.
-    </p>
+    <p class="hero-desc" data-i18n="section-team-desc">This project was developed as part of a collaborative effort, combining design and development.</p>
 
     <div style="margin-top:1.5rem; display:flex; gap:0.75rem; overflow-x:auto; padding-bottom:0.5rem; scrollbar-width:none;">
 
       <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
         <strong style="font-size:0.88rem;">Maria Eduarda Santellano</strong>
-        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;">iOS Developer</p>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.25rem; font-weight:300;" data-i18n="hero-role">Software Developer</p>
       </div>
     
       <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; min-width:160px; flex-shrink:0;">
@@ -127,10 +115,10 @@
   <!-- FOOTER -->
   <footer>
     © 2026 Maria Eduarda Santellano —
-    <a href="index.html" style="color:var(--accent); text-decoration:none;">
-      back to portfolio
-    </a>
+    <a href="index.html" style="color:var(--accent); text-decoration:none;" data-i18n="footer-back">back to portfolio</a>
   </footer>
+
+  <script src="lang.js"></script>
 
 </body>
 </html>
